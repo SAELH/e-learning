@@ -139,7 +139,7 @@
                             <tr>
                                 <td class="ps-4">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('storage/'. $course->thumbnail) }}" class="rounded me-3" width="40" alt="">
+                                        <img src="{{ asset('uploads/'. $course->thumbnail) }}" class="rounded me-3" width="40" alt="">
                                         <div>
                                             <div class="fw-bold">{{ $course->name }}</div>
                                             <div class="small text-muted">0 Students</div>
