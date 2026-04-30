@@ -14,7 +14,7 @@
                 @foreach($courses as $course)
                 <div class="col-md-4">
                     <div class="card course-card h-100">
-                        <img src="{{ asset('uploads/'. $course->thumbnail) }}" class="card-img-top p-2 rounded-4" alt="Web Dev">
+                        <img src="{{ asset($course->thumbnail) }}" class="card-img-top p-2 rounded-4" alt="Web Dev">
                         <div class="card-body">
                             <span class="badge bg-soft-primary text-primary mb-2" style="background: #e0e7ff;">{{ $course->category }}</span>
                             <h5 class="card-title fw-bold">{{ $course->name }}</h5>
