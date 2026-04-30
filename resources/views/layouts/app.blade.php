@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Learning" class="img-fluid rounded-3 shadow-lg">
+                    <img src="https://fls-a1aaa998-e885-42d8-b2cf-f860e77f7be8.laravel.cloud/e-learning_laravel.png" alt="Learning" class="img-fluid rounded-3 shadow-lg">
                 </div>
             </div>
         </div>
