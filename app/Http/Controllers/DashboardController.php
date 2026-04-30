@@ -39,7 +39,7 @@ class DashboardController extends Controller
 
         if ($request->hasFile('thumbnail')) {
             // Store the file in 'storage/app/public/images'
-            $path = $request->file('thumbnail')->store('images', 'public');
+            $path = $request->file('thumbnail')->store('uploads', 's3');
 
             Course::create([
             'name'=> $request->name,
@@ -87,7 +87,7 @@ class DashboardController extends Controller
         
         if ($request->hasFile('thumbnail')) {
             // Store the file in 'storage/app/public/images'
-            $path = $request->file('thumbnail')->store('images', 'public');
+            $path = $request->file('thumbnail')->store('uploads', 's3');
 
             $course = Course::find($id);
             $course->update([
