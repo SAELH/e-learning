@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Course;
 use App\Actions\Fortify\CreateNewUser;
+use Illuminate\Support\Facades\Storage;
 
 class DashboardController extends Controller
 {
@@ -39,7 +40,7 @@ class DashboardController extends Controller
 
         if ($request->hasFile('thumbnail')) {
             // Store the file in 'storage/app/public/images'
-            $path = $request->file('thumbnail')->store('images', 'public');
+            $path = $request->file('thumbnail')->store('uploads', 's3');
 
             Course::create([
             'name'=> $request->name,
@@ -87,7 +88,7 @@ class DashboardController extends Controller
         
         if ($request->hasFile('thumbnail')) {
             // Store the file in 'storage/app/public/images'
-            $path = $request->file('thumbnail')->store('images', 'public');
+            $path = $request->file('thumbnail')->store('uploads', 's3');
 
             $course = Course::find($id);
             $course->update([
